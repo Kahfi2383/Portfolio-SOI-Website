@@ -1,106 +1,574 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solusi Optima Indonesia</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Solusi Optima Indonesia — Professional Consulting, IT Audit, and Training Services. ISO Certification, IT Governance, and Executive Training for leading organizations across Indonesia." />
+  <meta name="theme-color" content="#1F2937" />
+  <title>Solusi Optima Indonesia | Consulting · IT Audit · Training</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231F2937'/><text y='23' x='4' font-size='20' fill='%23C8A96A'>S</text></svg>" />
 </head>
 <body>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-content">
-    <div class="logo">
-      <img src="assets/logo.png" alt="Logo"
-           onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <span class="fallback">Solusi Optima Indonesia</span>
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════ -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+
+    <!-- Logo -->
+    <a href="#hero" class="nav-logo" aria-label="Solusi Optima Indonesia — Home">
+      <img
+        src="assets/logo.png"
+        alt="Solusi Optima Indonesia"
+        data-logo
+        onerror="this.style.display='none';this.nextElementSibling.style.display='block'"
+      />
+      <span class="nav-logo-text" style="display:none">Solusi Optima Indonesia</span>
+      <!-- Always show text as secondary label if logo loads -->
+      <span class="nav-logo-text" aria-hidden="true" id="nav-logo-label">Solusi Optima Indonesia</span>
+    </a>
+
+    <!-- Desktop Links -->
+    <ul class="nav-links" role="list">
+      <li><a href="#hero"      class="nav-link">Home</a></li>
+      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+      <li><a href="#services"  class="nav-link">Services</a></li>
+      <li><a href="#contact"   class="nav-link">Contact</a></li>
+      <li>
+        <a href="#contact" class="btn-nav" aria-label="Get in touch">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          Let's Talk
+        </a>
+      </li>
+    </ul>
+
+    <!-- Hamburger -->
+    <button id="nav-hamburger" class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="nav-mobile" class="nav-mobile" aria-hidden="true">
+  <a href="#hero">Home</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+  <!-- Decorative background -->
+  <div class="hero-bg" aria-hidden="true">
+    <div class="hero-grid-lines"></div>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+
+      <!-- Left: Copy -->
+      <div class="hero-left">
+        <div class="hero-eyebrow hero-fade hero-fade-1">
+          <span class="dot" aria-hidden="true"></span>
+          Trusted by Indonesia's Leading Institutions
+        </div>
+
+        <h1 class="hero-title hero-fade hero-fade-2">
+          Solusi<br />
+          <em>Optima</em><br />
+          Indonesia
+        </h1>
+
+        <p class="hero-sub hero-fade hero-fade-3">
+          Professional Consulting, IT Audit, and Training Services — helping organizations achieve excellence through rigorous standards, certified frameworks, and strategic guidance.
+        </p>
+
+        <div class="hero-actions hero-fade hero-fade-4">
+          <a href="#portfolio" class="btn-primary">
+            View Our Work
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#services" class="btn-ghost">
+            Our Services
+          </a>
+        </div>
+
+        <div class="hero-stats hero-fade hero-fade-5">
+          <div class="stat-item">
+            <div class="stat-number">120<span>+</span></div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">80<span>+</span></div>
+            <div class="stat-label">Client Organizations</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10<span>+</span></div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Visual card -->
+      <div class="hero-right hero-fade hero-fade-6" aria-hidden="true">
+        <div class="hero-card-group">
+          <!-- Main Card -->
+          <div class="hero-card hero-card-main">
+            <div class="hc-tag">Current Engagement</div>
+            <div class="hc-title">ISO 27001 Implementation</div>
+            <div class="hc-sub">Information Security Management System</div>
+            <div class="hc-bar-wrap">
+              <div class="hc-bar-item">
+                <div class="hc-bar-label"><span>Gap Analysis</span><span>100%</span></div>
+                <div class="hc-bar-track"><div class="hc-bar-fill" style="width:100%"></div></div>
+              </div>
+              <div class="hc-bar-item">
+                <div class="hc-bar-label"><span>Controls Implementation</span><span>87%</span></div>
+                <div class="hc-bar-track"><div class="hc-bar-fill" style="width:87%"></div></div>
+              </div>
+              <div class="hc-bar-item">
+                <div class="hc-bar-label"><span>Internal Audit</span><span>60%</span></div>
+                <div class="hc-bar-track"><div class="hc-bar-fill" style="width:60%"></div></div>
+              </div>
+              <div class="hc-bar-item">
+                <div class="hc-bar-label"><span>Certification Audit</span><span>15%</span></div>
+                <div class="hc-bar-track"><div class="hc-bar-fill" style="width:15%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accent Card -->
+          <div class="hero-card hero-card-accent">
+            <div class="hc-accent-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div class="hc-accent-val">98%</div>
+            <div class="hc-accent-label">Client Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.hero-content -->
+  </div><!-- /.container -->
+
+  <!-- Scroll hint -->
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     TRUSTED BY
+════════════════════════════════════════════════════════════ -->
+<section id="trusted" aria-label="Clients">
+  <div class="container">
+    <div class="trusted-inner">
+      <span class="trusted-label">Trusted By</span>
+      <div class="trusted-logos">
+        <span class="trusted-name">Bank Negara Indonesia</span>
+        <span class="trusted-name">Telkom Indonesia</span>
+        <span class="trusted-name">Kementerian Keuangan</span>
+        <span class="trusted-name">PT Pertamina</span>
+        <span class="trusted-name">OJK</span>
+        <span class="trusted-name">Bank Mandiri</span>
+        <span class="trusted-name">PT Astra</span>
+        <span class="trusted-name">BSSN</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     PORTFOLIO
+════════════════════════════════════════════════════════════ -->
+<section id="portfolio" class="section-pad" aria-labelledby="portfolio-heading">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="portfolio-header">
+      <div class="reveal">
+        <p class="section-label">Our Work</p>
+        <div class="gold-rule"></div>
+        <h2 class="section-title" id="portfolio-heading">
+          Selected<br/>Project Portfolio
+        </h2>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <p class="body-lg" style="max-width:420px;">
+          A selection of engagements across ISO certification, IT governance audits, and professional training programs delivered to Indonesia's most prominent institutions.
+        </p>
+      </div>
     </div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container">
-    <h1>Solusi Optima Indonesia</h1>
-    <p>Professional Consulting, IT Audit, and Training Services</p>
-  </div>
-</section>
-
-<!-- PORTFOLIO -->
-<section id="portfolio" class="section">
-  <div class="container">
-    <h2>Portfolio</h2>
-
-    <div class="filters">
-      <button onclick="filterCategory('all')">All</button>
-      <button onclick="filterCategory('ISO')">ISO Consulting</button>
-      <button onclick="filterCategory('IT')">IT Audit</button>
-      <button onclick="filterCategory('Training')">Training</button>
-
-      <select id="isoFilter" onchange="filterISO()">
-        <option value="">All ISO</option>
-        <option value="ISO 27001">ISO 27001</option>
-        <option value="ISO 9001">ISO 9001</option>
-        <option value="ISO 37301">ISO 37301</option>
-      </select>
-
-      <input type="text" id="search" placeholder="Search..." onkeyup="searchPortfolio()">
-    </div>
-
-    <div id="portfolioContainer" class="grid"></div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="section alt">
-  <div class="container">
-    <h2>Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>ISO Consulting</h3>
-        <p>End-to-end ISO certification assistance.</p>
+    <!-- Controls -->
+    <div class="portfolio-controls reveal">
+      <div class="filter-group" role="group" aria-label="Filter by category">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="iso">ISO Consulting</button>
+        <button class="filter-btn" data-filter="audit">IT Audit</button>
+        <button class="filter-btn" data-filter="training">Training</button>
       </div>
-      <div class="card">
-        <h3>IT Audit & Assessment</h3>
-        <p>Security and governance assessments.</p>
+
+      <div class="filter-select-wrap">
+        <select id="iso-filter" class="filter-select" aria-label="Filter by ISO type">
+          <option value="all">All ISO Types</option>
+          <option value="ISO 27001">ISO 27001</option>
+          <option value="ISO 9001">ISO 9001</option>
+          <option value="ISO 37301">ISO 37301</option>
+        </select>
+        <span class="filter-select-icon" aria-hidden="true">▾</span>
       </div>
-      <div class="card">
-        <h3>Training Programs</h3>
-        <p>Professional training & certification prep.</p>
+
+      <div class="portfolio-search">
+        <span class="search-icon" aria-hidden="true">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        </span>
+        <input
+          type="search"
+          id="portfolio-search"
+          placeholder="Search projects…"
+          aria-label="Search portfolio"
+          autocomplete="off"
+        />
       </div>
     </div>
+
+    <!-- Grid (populated by JS) -->
+    <div
+      id="portfolio-grid"
+      class="portfolio-grid"
+      role="list"
+      aria-label="Portfolio projects"
+      aria-live="polite"
+    >
+      <!-- Loading state -->
+      <div class="no-results">
+        <div class="no-results-icon">⏳</div>
+        <p>Loading portfolio…</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section">
+
+<!-- ═══════════════════════════════════════════════════════════
+     SERVICES
+════════════════════════════════════════════════════════════ -->
+<section id="services" class="section-pad" aria-labelledby="services-heading">
   <div class="container">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>Phone: +62 xxx xxxx xxxx</p>
 
-    <form class="contact-form">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <textarea placeholder="Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
+    <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto 0;">
+      <p class="section-label">What We Do</p>
+      <div class="gold-rule centered"></div>
+      <h2 class="section-title" id="services-heading">Our Core Services</h2>
+      <p class="body-lg" style="margin-top:1rem;">
+        End-to-end professional services designed to elevate your organization's governance, security, and operational excellence.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- ISO Consulting -->
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3 class="service-title">ISO Consulting &amp; Certification</h3>
+        <p class="service-desc">
+          Comprehensive consulting and implementation support for internationally recognized management system standards. We guide you from gap analysis to successful certification.
+        </p>
+        <ul class="service-list" role="list">
+          <li>ISO 27001 — Information Security Management</li>
+          <li>ISO 9001 — Quality Management System</li>
+          <li>ISO 37301 — Compliance Management</li>
+          <li>Gap Analysis &amp; Readiness Assessment</li>
+          <li>Certification Audit Preparation</li>
+        </ul>
+      </div>
+
+      <!-- IT Audit -->
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+          </svg>
+        </div>
+        <h3 class="service-title">IT Audit &amp; Assessment</h3>
+        <p class="service-desc">
+          Independent, objective assessments of your IT environment to identify risks, evaluate controls, and provide actionable recommendations that align with regulatory requirements.
+        </p>
+        <ul class="service-list" role="list">
+          <li>IT Governance Audit (COBIT Framework)</li>
+          <li>Cybersecurity Maturity Assessment (NIST CSF)</li>
+          <li>Penetration Testing &amp; Vulnerability Assessment</li>
+          <li>Data Center &amp; Infrastructure Audit</li>
+          <li>Board-Level Reporting &amp; Remediation Roadmap</li>
+        </ul>
+      </div>
+
+      <!-- Training -->
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1F2937" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <h3 class="service-title">Training Programs</h3>
+        <p class="service-desc">
+          Tailored professional development programs that build lasting capability in your teams. From executive workshops to certified practitioner courses — delivered by seasoned industry experts.
+        </p>
+        <ul class="service-list" role="list">
+          <li>ISO 27001 Lead Auditor &amp; Lead Implementer</li>
+          <li>IT Risk Management for Executives</li>
+          <li>Cybersecurity Awareness Programs</li>
+          <li>COBIT &amp; IT Governance Workshops</li>
+          <li>Custom In-House Training Engagements</li>
+        </ul>
+      </div>
+
+    </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <p>© 2026 Solusi Optima Indonesia</p>
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT
+════════════════════════════════════════════════════════════ -->
+<section id="contact" class="section-pad" aria-labelledby="contact-heading">
+  <div class="container">
+
+    <div class="reveal">
+      <p class="section-label">Get In Touch</p>
+      <div class="gold-rule"></div>
+      <h2 class="section-title" id="contact-heading">Start a Conversation</h2>
+      <p class="body-lg" style="max-width:520px; margin-top:0.75rem;">
+        Ready to elevate your organization's standards? Reach out to our team and we'll respond within one business day.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="contact-info reveal reveal-delay-1">
+
+        <div class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value">
+              <a href="mailto:info@solusioptima.co.id" style="color:inherit;">info@solusioptima.co.id</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.59 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Phone</div>
+            <div class="contact-item-value">
+              <a href="tel:+622112345678" style="color:inherit;">+62 21 1234 5678</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Office</div>
+            <div class="contact-item-value">Jakarta, Indonesia</div>
+          </div>
+        </div>
+
+        <!-- Values note -->
+        <div style="padding: 1.75rem; background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); margin-top: 1rem;">
+          <div style="display:flex; align-items:center; gap:0.6rem; margin-bottom:1rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C8A96A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span style="font-size:0.78rem; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold-dark);">Our Commitment</span>
+          </div>
+          <ul style="display:flex; flex-direction:column; gap:0.6rem;">
+            <li style="font-size:0.87rem; color:var(--dark-soft); display:flex; align-items:center; gap:0.5rem;">
+              <span style="width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;"></span>
+              Response within 1 business day
+            </li>
+            <li style="font-size:0.87rem; color:var(--dark-soft); display:flex; align-items:center; gap:0.5rem;">
+              <span style="width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;"></span>
+              Complimentary initial consultation
+            </li>
+            <li style="font-size:0.87rem; color:var(--dark-soft); display:flex; align-items:center; gap:0.5rem;">
+              <span style="width:5px;height:5px;background:var(--gold);border-radius:50%;flex-shrink:0;"></span>
+              Tailored proposal within 3 business days
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form-wrap reveal reveal-delay-2">
+        <form id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="field-name">Full Name *</label>
+              <input id="field-name" type="text" class="form-input" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-org">Organization *</label>
+              <input id="field-org" type="text" class="form-input" placeholder="Company / Institution" required autocomplete="organization" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="field-email">Email Address *</label>
+              <input id="field-email" type="email" class="form-input" placeholder="you@company.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="field-phone">Phone Number</label>
+              <input id="field-phone" type="tel" class="form-input" placeholder="+62 xxx xxxx xxxx" autocomplete="tel" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="field-service">Service of Interest</label>
+            <select id="field-service" class="form-select-field">
+              <option value="">Select a service…</option>
+              <option>ISO Consulting &amp; Certification (ISO 27001)</option>
+              <option>ISO Consulting &amp; Certification (ISO 9001)</option>
+              <option>ISO Consulting &amp; Certification (ISO 37301)</option>
+              <option>IT Audit &amp; Assessment</option>
+              <option>Training Programs</option>
+              <option>Multiple Services</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="field-message">Message *</label>
+            <textarea
+              id="field-message"
+              class="form-textarea"
+              placeholder="Tell us about your organization's needs and how we can help…"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+            </svg>
+            Send Message
+          </button>
+        </form>
+
+        <!-- Success state -->
+        <div id="form-success" class="form-success" aria-live="polite">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+          </svg>
+          <h3 style="font-family:var(--font-display); font-size:1.3rem; color:var(--dark); margin-bottom:0.5rem;">Message Received!</h3>
+          <p>Thank you for reaching out. Our team will be in touch within one business day.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-logo">
+        <img
+          src="assets/logo.png"
+          alt="Solusi Optima Indonesia"
+          onerror="this.style.display='none'"
+        />
+        Solusi Optima Indonesia
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#hero">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-divider" aria-hidden="true"></div>
+
+      <p class="footer-bottom">
+        &copy; 2026 <span class="footer-gold">Solusi Optima Indonesia</span>. All rights reserved.
+        &nbsp;·&nbsp; Professional Consulting &amp; IT Advisory
+      </p>
+
+    </div>
+  </div>
 </footer>
 
+
+<!-- Script -->
 <script src="script.js"></script>
+
+<!-- Inline: logo-only override to avoid double text when logo loads -->
+<script>
+  // If logo image loads successfully, hide the always-on text label
+  const logoImg = document.querySelector('.nav-logo img');
+  const logoLabel = document.getElementById('nav-logo-label');
+  if (logoImg && logoLabel) {
+    logoImg.addEventListener('load', () => {
+      logoLabel.style.display = 'none';
+    });
+    // If already loaded (cached)
+    if (logoImg.complete && logoImg.naturalWidth > 0) {
+      logoLabel.style.display = 'none';
+    }
+  }
+</script>
+
 </body>
 </html>
