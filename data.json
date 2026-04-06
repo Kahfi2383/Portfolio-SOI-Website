@@ -1,23 +1,112 @@
-[
-  {
-    "company": "ABC Corp",
-    "category": "ISO",
-    "iso": "ISO 27001",
-    "description": "ISO 27001 implementation & certification",
-    "year": "2024"
-  },
-  {
-    "company": "XYZ Industries",
-    "category": "IT",
-    "iso": "",
-    "description": "IT audit & security assessment",
-    "year": "2023"
-  },
-  {
-    "company": "Global Training",
-    "category": "Training",
-    "iso": "",
-    "description": "ISO awareness training program",
-    "year": "2025"
-  }
-]
+{
+  "portfolio": [
+    {
+      "id": 1,
+      "company": "Bank Negara Indonesia",
+      "category": "ISO Consulting & Certification",
+      "isoType": "ISO 27001",
+      "description": "End-to-end implementation of Information Security Management System, achieving ISO 27001:2022 certification across all digital banking infrastructure.",
+      "year": 2024,
+      "tags": ["ISMS", "Risk Assessment", "Security Controls"]
+    },
+    {
+      "id": 2,
+      "company": "PT Telkom Indonesia",
+      "category": "IT Audit / Assessment",
+      "isoType": null,
+      "description": "Comprehensive IT governance audit covering network infrastructure, data center operations, and cybersecurity posture across 12 regional offices.",
+      "year": 2024,
+      "tags": ["IT Governance", "COBIT", "Risk Management"]
+    },
+    {
+      "id": 3,
+      "company": "Kementerian Keuangan RI",
+      "category": "ISO Consulting & Certification",
+      "isoType": "ISO 9001",
+      "description": "Quality Management System implementation and certification support for the Directorate General of Taxes, improving service delivery standards nationwide.",
+      "year": 2023,
+      "tags": ["QMS", "Process Improvement", "Audit Readiness"]
+    },
+    {
+      "id": 4,
+      "company": "PT Pertamina Persero",
+      "category": "Training Programs",
+      "isoType": null,
+      "description": "Delivered a 3-month executive training program on IT Risk Management and Cybersecurity Awareness for 200+ senior managers across business units.",
+      "year": 2024,
+      "tags": ["Executive Training", "Cybersecurity", "IT Risk"]
+    },
+    {
+      "id": 5,
+      "company": "Otoritas Jasa Keuangan",
+      "category": "ISO Consulting & Certification",
+      "isoType": "ISO 37301",
+      "description": "Compliance Management System design and implementation aligned with OJK regulatory requirements, covering anti-corruption and governance frameworks.",
+      "year": 2023,
+      "tags": ["Compliance", "Anti-Corruption", "Governance"]
+    },
+    {
+      "id": 6,
+      "company": "PT Bank Mandiri",
+      "category": "IT Audit / Assessment",
+      "isoType": null,
+      "description": "Independent IT security assessment and penetration testing for digital banking platforms, with remediation roadmap development and board-level reporting.",
+      "year": 2023,
+      "tags": ["Penetration Testing", "Security Assessment", "Digital Banking"]
+    },
+    {
+      "id": 7,
+      "company": "PT PLN Persero",
+      "category": "Training Programs",
+      "isoType": null,
+      "description": "ISO 27001 Internal Auditor certification training for 50 IT personnel, with practical workshops on audit planning, execution, and reporting.",
+      "year": 2024,
+      "tags": ["Internal Auditor", "ISO 27001", "Certification Training"]
+    },
+    {
+      "id": 8,
+      "company": "PT Astra International",
+      "category": "ISO Consulting & Certification",
+      "isoType": "ISO 9001",
+      "description": "Group-wide Quality Management System harmonization across 12 subsidiary companies, achieving unified ISO 9001:2015 certification.",
+      "year": 2022,
+      "tags": ["QMS", "Multi-site Certification", "Process Harmonization"]
+    },
+    {
+      "id": 9,
+      "company": "Badan Siber dan Sandi Negara",
+      "category": "IT Audit / Assessment",
+      "isoType": null,
+      "description": "National cybersecurity maturity assessment using NIST CSF framework, covering critical information infrastructure across government agencies.",
+      "year": 2023,
+      "tags": ["NIST CSF", "National Security", "Maturity Assessment"]
+    },
+    {
+      "id": 10,
+      "company": "PT Indofood Sukses Makmur",
+      "category": "ISO Consulting & Certification",
+      "isoType": "ISO 37301",
+      "description": "Compliance management framework development and gap analysis for regulatory compliance across food manufacturing and distribution operations.",
+      "year": 2022,
+      "tags": ["Compliance Framework", "Gap Analysis", "Food Industry"]
+    },
+    {
+      "id": 11,
+      "company": "PT GoTo Gojek Tokopedia",
+      "category": "Training Programs",
+      "isoType": null,
+      "description": "Agile IT governance and risk management bootcamp for engineering leads, covering modern frameworks tailored to high-growth technology environments.",
+      "year": 2024,
+      "tags": ["Agile Governance", "Tech Startup", "Risk Bootcamp"]
+    },
+    {
+      "id": 12,
+      "company": "PT Kimia Farma",
+      "category": "ISO Consulting & Certification",
+      "isoType": "ISO 27001",
+      "description": "Information security management implementation for pharmaceutical data systems, ensuring patient data protection and regulatory compliance.",
+      "year": 2022,
+      "tags": ["Pharma", "Data Protection", "ISMS"]
+    }
+  ]
+}
